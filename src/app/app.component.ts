@@ -15,10 +15,10 @@ export class AppComponent {
   constructor(private fb: FormBuilder) {
     
     this.form = this.fb.group({
-      name: [[''],[Validators.required]],
-      lastName: [[''],[Validators.required]],
-      phone: [[''],[Validators.required, Validators.minLength(10)]],
-      email:  [[''],[Validators.required, Validators.email]]
+      name: ['',[Validators.required]],
+      lastName: ['',[Validators.required]],
+      phone: ['',[Validators.required, Validators.minLength(10)]],
+      email:  ['',[Validators.required, Validators.email]]
     });
 
   }
